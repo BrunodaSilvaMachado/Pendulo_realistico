@@ -182,7 +182,7 @@ sendo esta uma solu\c{c}\~ao linear, ou seja possui resolu\c{c}\~ao.
 
 \section{Resultado}
 
-Nas figuras a seguir vamos visualizar as solu\c{c}\~oes obtidas na se\c{c}\~ao anterior, nelas est\~ao representadas a posi\c{c}\~ao, velocidade e espa\c{c}o de fase do p\^endulo para o caso em que frequ\^encia angular $\omega^2$ \'e igual a 3,5 e 10, com o constante de arrasto $\gamma$ igual a 0.1 0.5 1.0 e a  posi\c{c}\~ao inicial $x_0 = 1$m com velocidade $v_0 = 0$. Nestes gr\'aficos, podemos notar que a posi\c{c}~ao e a velocidade s\~ao cont\'inuas embora a modula\c{c}~ao da amplitude n\~ao seja,Tamb\'em notamos que suas amplitudes decrescem de forma inst\'avel com o tempo.
+Nas figuras a seguir vamos visualizar as solu\c{c}\~oes obtidas na se\c{c}\~ao anterior, nelas est\~ao representadas a posi\c{c}\~ao, velocidade e espa\c{c}o de fase do p\^endulo para o caso em que frequ\^encia angular $\omega^2$ \'e igual a 3,5 e 10, com o constante de arrasto $\gamma$ igual a 0.1, 0.5 e 1.0 e a  posi\c{c}\~ao inicial $x_0 = 1$m com velocidade $v_0 = 0$. Nestes gr\'aficos, podemos notar que a posi\c{c}~ao e a velocidade s\~ao cont\'inuas embora a modula\c{c}~ao da amplitude n\~ao seja,Tamb\'em notamos que suas amplitudes decrescem de forma inst\'avel com o tempo.
 
 \begin{center}
 	\includegraphics[width=4.80in,height=3.84in,keepaspectratio = false]{pendulo1_image1.png}
@@ -240,9 +240,25 @@ Nas figuras 5,6,e7 vemos os gr\'aficos da Velocidade x Tempo do pendulo - Podemo
 
 Nas figuras 8,9 e 10 espa\c{c}o de fase do pendulo com arrasto a patir dele podemos supor que a energia do oscilador n\~ao se conserva uma vez que a curva n\~ao fechada e tem um formato de espiral.
 
+Como j\'a sabemos a energia se dissipa com o tempo atraves do espa\c{c}o de configura\c{c}\~ao vimos que ela decai de maneira suave e na forma de espiral. configura\c{c}\~oes desse tipo s\~ao caracter\'isticas quando a energia possui depend\^encias trigonom\'etricas.
+podemos assim definir a energia como soma da cin\'etica com a potencial
+Temos:
+\[T = \frac{1}{2}m\dot{\theta}\]
+e
+\[U = mgl\cos(\theta)\]
+\[U = \frac{m\omega^2}{g}cos(\theta)\]
+pressupondo a naureza do problema sabemos que a energia decai exponencialmente com o tempo, para confirmar nossa suspeitas fa\c{c}amos um gr\'afico. 
+
+\begin{center}
+	
+	\includegraphics[width=4.80in,height=3.84in,keepaspectratio = false]{pendulo1_image4.png}
+	
+	\scriptsize  Figura 11. gr\'afico da energia contra o tempo 
+\end{center}
+
 \section{Conclu\c{c}\~ao}
 
-Nesse trabalho estudamos o comportamento do pendulo real e apresentamos a solu\c{c}\~ao para \^angulos em que $\sin(\theta) > \theta$ e pequenos com uma for\c{c}a dissipativa depende de um coeficiente de arrasto e do m\'odulo da velocidade, tambem verificamos que a amplitude decai exponencialmente mas o per\'iodo não. E atrav\'es do m\'etodos de Verlet podemos fazer uma analise numerica do problema e encontrando facilmente a sua solu\c{c}\~ao 
+Nesse trabalho estudamos o comportamento do pendulo real e apresentamos a solu\c{c}\~ao para \^angulos em que $\sin(\theta) > \theta$ e pequenos com uma for\c{c}a dissipativa depende de um coeficiente de arrasto e do m\'odulo da velocidade, tambem verificamos que a amplitude decai exponencialmente assim como a energia. E atrav\'es do m\'etodos de Verlet podemos fazer uma analise numerica do problema e encontrando facilmente a sua solu\c{c}\~ao 
 
 \section{Referencia}
 
